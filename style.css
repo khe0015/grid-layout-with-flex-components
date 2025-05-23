@@ -1,23 +1,26 @@
-x.siteheader {
-  max-width: 900px;
-  margin: 2rem auto 1rem auto;
-  padding-left: 2rem;
-}
-
-.siteheader h1 {
-  text-align: left;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
   margin: 0;
+  padding: 0;
 }
 
-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+.siteheader {
   padding: 2rem;
 }
 
+.siteheader h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 2rem; /* Aligné à gauche */
+}
+
 .emojis {
-  display: contents;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .emoji {
@@ -28,45 +31,37 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 .emoji h2 {
-  text-align: center;
-  margin: 0.5rem 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-bottom: 2px solid #ccc;
   padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 .icon {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   margin: 1rem 0;
 }
 
 .emoji p {
-  flex-grow: 1;
+  font-size: 0.9rem;
   text-align: center;
-  font-size: 0.95rem;
-  margin: 1rem 0;
+  flex-grow: 1;
 }
 
 .emoji a {
-  display: block;
-  text-align: center;
   text-decoration: none;
-  background-color: #5E3BEE;
+  background-color: #781BAA;
   color: white;
-  padding: 0.75rem;
-  border-radius: 8px;
+  padding: 0.8rem;
+  display: block;
   margin-top: 1rem;
+  text-align: center;
+  border-radius: 5px;
   font-weight: bold;
-}
-main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  padding: 2rem;
-  justify-items: center;
 }
